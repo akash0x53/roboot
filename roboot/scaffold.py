@@ -12,9 +12,9 @@ def create_dir(paths):
     for path in paths:
         try:
             os.mkdir(path)
-        except IOError, e:
+        except IOError as e:
             print(e)
-        except OSError, oe:
+        except OSError as oe:
             print(oe)
 
 def create_project(project_name):

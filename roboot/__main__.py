@@ -9,7 +9,7 @@ def main(*args, **kwargs):
 	parser.add_argument("project", type=str, nargs='?', default='', help="Project name")
 	args = masterparser.parse_args()
 
-	if args.project:
+	if "project" in args:
 		create_project(args.project)
 	else:
 		print("Please provide project name")
